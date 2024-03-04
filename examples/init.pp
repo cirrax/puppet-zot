@@ -36,21 +36,21 @@ class { 'zot':
   config_extensions_sync    => {
     enable          => true,
     credentialsFile => '/etc/zot/sync-credentials.json',
-    registries      => {
-      [
+    registries      => [
+      {
         urls         => ['https://docker.io'],
         onDemand     => true,
         maxRetries   => 3,
         retryDelay   => 10,
         pollInterval => '30s',
         onlySigned   => false,
-        content      => {
-          [
+        content      => [
+          {
             destination => '/dockerhub',
             prefix      => '**',
-          ],
-        },
-      ],
+          },
+        ],
+      }],
     },
   },
   sync_credentials          => {
