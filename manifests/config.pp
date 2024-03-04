@@ -80,6 +80,7 @@ class zot::config {
         'extensions_scrub'   => $zot::config_extensions_scrub,
         'extensions_search'  => $zot::config_extensions_search,
         'extensions_sync'    => $zot::config_extensions_sync,
+        'extensions_ui'      => $zot::config_extensions_ui,
       }
     )
   }

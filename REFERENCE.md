@@ -58,6 +58,7 @@ The following parameters are available in the `zot` class:
 * [`config_extensions_scrub`](#-zot--config_extensions_scrub)
 * [`config_extensions_search`](#-zot--config_extensions_search)
 * [`config_extensions_sync`](#-zot--config_extensions_sync)
+* [`config_extensions_ui`](#-zot--config_extensions_ui)
 * [`config_storage`](#-zot--config_storage)
 * [`gid`](#-zot--gid)
 * [`group`](#-zot--group)
@@ -202,6 +203,14 @@ Hash containing the search extension configuration in the config file
 Data type: `Optional[Hash]`
 
 Hash containing the sync extension configuration in the config file
+
+##### <a name="-zot--config_extensions_ui"></a>`config_extensions_ui`
+
+Data type: `Optional[Hash]`
+
+Hash containing the ui extension configuration in the config file
+
+Default value: `undef`
 
 ##### <a name="-zot--config_storage"></a>`config_storage`
 

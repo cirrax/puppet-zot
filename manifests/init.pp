@@ -62,6 +62,9 @@
 # @param config_extensions_sync
 #   Hash containing the sync extension configuration in the config file
 #
+# @param config_extensions_ui
+#   Hash containing the ui extension configuration in the config file
+#
 # @param config_storage
 #   Hash containing the storage section in the config file
 #
@@ -158,6 +161,7 @@ class zot (
   Optional[Hash]                 $config_extensions_scrub,
   Optional[Hash]                 $config_extensions_search,
   Optional[Hash]                 $config_extensions_sync,
+  Optional[Hash]                 $config_extensions_ui = undef,
   Hash                           $config_storage,
   Stdlib::Unixpath               $data_dir,
   Accounts::User::Uid            $gid,

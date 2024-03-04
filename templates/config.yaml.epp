@@ -8,6 +8,7 @@
   Optional[Hash] $extensions_scrub,
   Optional[Hash] $extensions_search,
   Optional[Hash] $extensions_sync,
+  Optional[Hash] $extensions_ui,
 | -%>
 # File managed by Puppet
 ---
@@ -41,5 +42,9 @@ extensions:
 <% if $extensions_sync { -%>
   sync:
 <%= zot::to_yaml($extensions_sync, 2) %>
+<% } -%>
+<% if $extensions_ui{ -%>
+  ui:
+<%= zot::to_yaml($extensions_ui, 2) %>
 <% } -%>
 ...
